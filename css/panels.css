@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+ Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	line-height: 1.6;
+}
+
+a {
+	color: royalblue;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.header {
+	width: 100%;
+	height: 52px;
+	text-align: right;
+}
+
+
+/*--------------------------------------------------------------
+ Hey f your styles here...
+--------------------------------------------------------------*/
+
+.tab-pane {
+	display: none;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 300px;
+	height: 100%;
+	
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.18);
+       -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.18);
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.18);
+}
+.tab-pane.active {
+	display: block;
+}
+.tab-pane__header {
+	height: 52px;
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+}
+.tab-pane__content {
+	height: calc(100% - 52px);
+	padding: 15px;
+	overflow-y: auto;
+	background: #fff;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.tab-pane {
+		width: 400px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+ Media Queries
+--------------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */   
+@media only screen and (min-width: 768px) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
